@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RegisterForm</title>
+  <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+</head>
+
+<body>
+
+  <div id="registrationModal" class="homeModal" >
+    <div class="homeModalOverlay"></div>
+    <div class="homeFormContainer">
+      <form id="registrationForm">
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
+          <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting" autocomplete="name" />
+
+          <p class="homeFormErrorText" id="nameError" style="display: none">❌ Ismni kiriting!</p>
+        </div>
+      
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+          <div class="phone-input-container">
+            <input class="HomeFormRowInput" type="tel" id="phone" name="phone" placeholder="90 123 45 67" autocomplete="tel" />
+          </div>
+          <p class="homeFormErrorText" id="phoneError" style="display: none">❌ Telefon raqami noto‘g‘ri!</p>
+        </div>
+      
+        <button type="submit" class="HomeFormBtn" id="submitBtn">Ro’yxatdan o’tish</button>
+      </form>
+      
+    </div>
+  </div>
+
+  <script defer src="./js/app.js"></script>
+</body>
+
+</html>
